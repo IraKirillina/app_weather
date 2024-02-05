@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Прогноз погоды</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <div class="header">
+         <form class="search">
+            <input type="text" name="" id="" placeholder="Поиск города..." class="searchform">
+            <i class="fa-solid fa-magnifying-glass"></i>
+         </form>
+         <div class="units">
+            <span class="celsius">&#176C</span>
+            <span class="farenhe">&#176F</span>
+         </div> 
+      </div>
+      <div class="body">
+         <h1 class="city">Moscow</h1>
+         <div class="datetime">
+            <p></p>
+         </div>
+         <div class="forecast">
+            <!-- <p>clear</p> -->
+         </div>
+         <div class="icon">
+         </div>
+         <p class="tempreature">
+            18&#176
+         </p>
+         <div class="minmax">
+            <p>Min: 12&#176</p>
+            <p>Max: </p>
+         </div>
+      </div>
+
+      <div class="info">
+         <div class="card">
+            <i class="fa-solid fa-temperature-full"></i>
+            <div>
+               <p>чувствуется как</p>
+               <p class="realfeel"></p>
+            </div>
+         </div>
+         <div class="card">
+            <i class="fa-solid fa-droplet"></i>
+            <div>
+               <p>влажность</p>
+               <p class="humidity"></p>
+            </div>
+         </div>
+         <div class="card">
+            <i class="fa-solid fa-wind"></i>
+            <div>
+               <p>ветер</p>
+               <p class="wind"></p>
+            </div>
+         </div>
+         <div class="card">
+            <i class="fa-solid fa-gauge-high"></i>
+            <div>
+               <p>давление</p>
+               <p class="pressure"></p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
+   <script src="app.js"></script>
+</body>
+</html>
