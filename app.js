@@ -47,36 +47,33 @@ function setWeatherBackground(iconCode) {
            imageUrl = "url(img/sunny.jpg)";
            break;
        case "02d":
+         imageUrl = "url(img/cloud.jpg)";
        case "03d":
+         imageUrl = "url(img/cloud.jpg)";
        case "04d":
-           imageUrl = "url(img/cloud-black-and-white-sky-cloudy-atmosphere-daytime-weather-cumulus-covered-monochrome-clouds-climate-forward-meteorology-cloudiness-weather-phenomenon-meteorological-phenomenon-1126288.jpg)";
+           imageUrl = "url(img/cloud.jpg)";
            break;
        case "09d":
+         imageUrl = "url(img/rain.jpg)";
        case "10d":
-           imageUrl = "url(img/cloud-black-and-white-sky-cloudy-atmosphere-daytime-weather-cumulus-covered-monochrome-clouds-climate-forward-meteorology-cloudiness-weather-phenomenon-meteorological-phenomenon-1126288.jpg)";
+           imageUrl = "url(img/rain.jpg)";
            break;
        case "11d":
-           imageUrl = "url(img/thunderstorm.jpg)";
+           imageUrl = "url(img/thunder.jpg)";
            break;
        case "13d":
            imageUrl = "url(img/snow.jpg)";
            break;
+      case "50d":
+         imageUrl = "url(img/haze.jpg)";
        default:
-           imageUrl = "url(img/default.jpg)";
+           imageUrl = "url(img/clear.jpg)";
            break;
    }
 
    // Установка нового фонового изображения
    body.style.backgroundImage = imageUrl;
 }
-
-// После получения данных о погоде вызывайте эту функцию,
-// передавая код иконки погоды в качестве параметра
-// Например:
-// setWeatherBackground(data.weather[0].icon);
-
-
-
 
 //преобразование времени
 function convertTime(timestamp, timezone){
